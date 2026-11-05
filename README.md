@@ -7,7 +7,7 @@
 
 A free, modern theme for [Open Journal Systems (OJS)](https://pkp.sfu.ca/ojs/), built for academic journals that care about clean presentation and indexing (Google Scholar, Crossref, DOAJ).
 
-Developed by **[Yogesh Singh Bisht](https://digitalbisht.com/)**.
+Developed by **[Yogesh Singh Bisht](https://digitalbisht.com/)** **[LinkedIn](https://www.linkedin.com/in/yogeshsinghbisht/)**.
 
 ## Features
 
