@@ -1,0 +1,10 @@
+# Normalise line endings in the repository
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+
+# Keep GitHub-only files out of the OJS upload package (git archive)
+.github export-ignore
+.gitattributes export-ignore
+.gitignore export-ignore
+SECURITY.md export-ignore

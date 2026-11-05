@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * Bisht Academic Theme - English locale
+  * Copyright (c) 2025-2026 Yogesh Singh Bisht - https://digitalbisht.com/
+  * Distributed under the GNU GPL v3. For full terms see the file LICENSE.
+  -->
+
+<locale name="en_US" full_name="U.S. English">
+
+	<!-- Theme -->
+	<message key="plugins.themes.bishtAcademic.name">Bisht Academic Theme</message>
+	<message key="plugins.themes.bishtAcademic.description">A free, professional academic theme for scholarly journals. Developed by Yogesh Singh Bisht.</message>
+
+	<!-- Shared -->
+	<message key="plugins.themes.bishtAcademic.option.yes">Yes</message>
+	<message key="plugins.themes.bishtAcademic.option.no">No</message>
+
+	<!-- Color Scheme -->
+	<message key="plugins.themes.bishtAcademic.option.colorScheme.label">Color Scheme</message>
+	<message key="plugins.themes.bishtAcademic.option.colorScheme.description">Select the primary color scheme for the theme.</message>
+	<message key="plugins.themes.bishtAcademic.option.colorScheme.teal">Teal</message>
+	<message key="plugins.themes.bishtAcademic.option.colorScheme.blue">Blue</message>
+	<message key="plugins.themes.bishtAcademic.option.colorScheme.green">Green</message>
+	<message key="plugins.themes.bishtAcademic.option.colorScheme.purple">Purple</message>
+
+	<!-- SEO -->
+	<message key="plugins.themes.bishtAcademic.option.seo.label">SEO Features</message>
+	<message key="plugins.themes.bishtAcademic.option.seo.description">Enable SEO enhancements such as schema markup and social metadata.</message>
+	<message key="plugins.themes.bishtAcademic.option.seo.structuredData">Schema.org structured data (JSON-LD)</message>
+	<message key="plugins.themes.bishtAcademic.option.seo.openGraph">Open Graph meta tags</message>
+	<message key="plugins.themes.bishtAcademic.option.seo.twitterCards">Twitter / X card meta tags</message>
+
+	<!-- Metric badges -->
+	<message key="plugins.themes.bishtAcademic.option.metricBadges.label">Altmetric and Dimensions Badges</message>
+	<message key="plugins.themes.bishtAcademic.option.metricBadges.description">Show Altmetric and Dimensions badges on article pages that have a DOI. These badges load scripts from altmetric.com and dimensions.ai, which can see the reader's IP address. Choose "No" if your privacy policy does not allow third-party scripts.</message>
+
+	<!-- Journal highlights -->
+	<message key="plugins.themes.bishtAcademic.option.doiPrefix.label">Highlights: DOI Prefix</message>
+	<message key="plugins.themes.bishtAcademic.option.doiPrefix.description">Leave empty to use the prefix saved in the DOI plugin settings (Settings > Website > Plugins > DOI). Enter - to hide.</message>
+	<message key="plugins.themes.bishtAcademic.option.journalStarted.label">Highlights: Year Started</message>
+	<message key="plugins.themes.bishtAcademic.option.journalStarted.description">For example 2022. Leave empty to hide.</message>
+	<message key="plugins.themes.bishtAcademic.option.publicationFrequency.label">Highlights: Publication Frequency</message>
+	<message key="plugins.themes.bishtAcademic.option.publicationFrequency.description">For example Monthly, Quarterly or Continuous. Leave empty to hide.</message>
+	<message key="plugins.themes.bishtAcademic.option.publicationLanguage.label">Highlights: Language</message>
+	<message key="plugins.themes.bishtAcademic.option.publicationLanguage.description">Leave empty to list the submission languages from Settings > Website > Setup > Languages. Enter - to hide.</message>
+	<message key="plugins.themes.bishtAcademic.option.apcAmount.label">Highlights: Article Processing Charge (APC)</message>
+	<message key="plugins.themes.bishtAcademic.option.apcAmount.description">For example USD 150 or No charge. Leave empty to use the Publication Fee from Settings > Distribution > Payments (only when payments are enabled). Enter - to hide.</message>
+	<message key="plugins.themes.bishtAcademic.option.indexedIn.label">Indexed In</message>
+	<message key="plugins.themes.bishtAcademic.option.indexedIn.description">Comma-separated list of services where the journal is actually indexed, for example: Google Scholar, Crossref. Only list services that index your journal today. Leave empty to hide.</message>
+
+	<message key="plugins.themes.bishtAcademic.highlight.onlineIssn">Online ISSN</message>
+	<message key="plugins.themes.bishtAcademic.highlight.printIssn">Print ISSN</message>
+	<message key="plugins.themes.bishtAcademic.highlight.doiPrefix">DOI Prefix</message>
+	<message key="plugins.themes.bishtAcademic.highlight.started">Started</message>
+	<message key="plugins.themes.bishtAcademic.highlight.frequency">Frequency</message>
+	<message key="plugins.themes.bishtAcademic.highlight.language">Language</message>
+	<message key="plugins.themes.bishtAcademic.highlight.apc">APC</message>
+
+	<!-- Homepage card and page links -->
+	<message key="plugins.themes.bishtAcademic.option.infoCardTitle.label">Homepage Card: Title</message>
+	<message key="plugins.themes.bishtAcademic.option.infoCardTitle.description">Optional third card next to "About the Journal" and "Indexing and Abstracting", for example "Continuous Publishing" or "Call for Papers". Leave empty to hide the card.</message>
+	<message key="plugins.themes.bishtAcademic.option.infoCardText.label">Homepage Card: Text</message>
+	<message key="plugins.themes.bishtAcademic.option.infoCardUrl.label">Homepage Card: "Read More" Link</message>
+	<message key="plugins.themes.bishtAcademic.option.ethicsUrl.label">Publication Ethics Page URL</message>
+	<message key="plugins.themes.bishtAcademic.option.indexingUrl.label">Indexing Page URL</message>
+	<message key="plugins.themes.bishtAcademic.option.googleScholarUrl.label">Google Scholar Profile URL</message>
+	<message key="plugins.themes.bishtAcademic.option.url.description">Full address starting with https://, for example a page made with the Static Pages plugin. Leave empty to hide the link.</message>
+
+	<!-- Social links -->
+	<message key="plugins.themes.bishtAcademic.option.social.label">{$network} Profile URL</message>
+	<message key="plugins.themes.bishtAcademic.option.social.description">Full address starting with https://. Leave empty to hide this icon.</message>
+
+</locale>

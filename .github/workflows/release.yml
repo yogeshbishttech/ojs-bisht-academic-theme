@@ -1,0 +1,40 @@
+# Builds the OJS upload package and publishes a GitHub Release
+# whenever a version tag such as v1.1.0 is pushed.
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check version.xml matches the tag
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          if ! grep -q "<release>${VERSION}" version.xml; then
+            echo "::error::version.xml <release> does not start with ${VERSION}. Update it before tagging."
+            exit 1
+          fi
+
+      - name: Build OJS plugin package
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          FILE="bishtAcademicTheme-${VERSION}.tar.gz"
+          # Files marked export-ignore in .gitattributes are left out
+          git archive --format=tar.gz --prefix=bishtAcademicTheme/ -o "$FILE" "$GITHUB_REF_NAME"
+          md5sum "$FILE" | tee "$FILE.md5"
+
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" bishtAcademicTheme-*.tar.gz bishtAcademicTheme-*.tar.gz.md5 \
+            --title "Bisht Academic Theme ${GITHUB_REF_NAME}" \
+            --generate-notes

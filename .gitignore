@@ -1,0 +1,12 @@
+# Build output
+*.tar.gz
+*.tar.gz.md5
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.backup
+*.bak
