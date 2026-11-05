@@ -1,4 +1,4 @@
-# Bisht Academic Theme for OJS
+# Bisht Academic Theme for OJS - Free
 
 ![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)
 ![OJS](https://img.shields.io/badge/OJS-3.3-green.svg)
